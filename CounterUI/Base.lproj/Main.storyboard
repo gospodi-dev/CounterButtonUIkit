@@ -16,24 +16,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ok6-jO-4mn">
-                                <rect key="frame" x="165.08727810650885" y="426" width="83" height="47"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ok6-jO-4mn">
+                                <rect key="frame" x="111" y="426" width="192" height="47"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" buttonSize="large"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSQ-bl-WSe">
+                                <rect key="frame" x="196" y="429" width="22" height="38"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ok6-jO-4mn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="165.08727810650885" id="34T-Yz-1XF"/>
-                            <constraint firstItem="Ok6-jO-4mn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sgf-ss-jTz"/>
-                            <constraint firstItem="Ok6-jO-4mn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="382" id="bpN-dI-JLO"/>
+                            <constraint firstItem="Ok6-jO-4mn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9dI-57-kXg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ok6-jO-4mn" secondAttribute="bottom" constant="389" id="CWc-VW-fgu"/>
+                            <constraint firstItem="Ok6-jO-4mn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="Hg5-Gt-gue"/>
+                            <constraint firstItem="Ok6-jO-4mn" firstAttribute="centerX" secondItem="TSQ-bl-WSe" secondAttribute="centerX" id="WYX-6A-EDn"/>
+                            <constraint firstItem="TSQ-bl-WSe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fgK-2W-Ip3"/>
+                            <constraint firstItem="TSQ-bl-WSe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="385" id="naF-Hr-Sjk"/>
+                            <constraint firstItem="Ok6-jO-4mn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="382" id="oef-8V-H0v"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="70"/>
+            <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
         </scene>
     </scenes>
     <resources>
