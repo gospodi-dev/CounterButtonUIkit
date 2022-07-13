@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CCA502B7287EFF9F00B39F75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA502B6287EFF9F00B39F75 /* AppDelegate.swift */; };
 		CCA502B9287EFF9F00B39F75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA502B8287EFF9F00B39F75 /* SceneDelegate.swift */; };
-		CCA502BB287EFF9F00B39F75 /* CViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA502BA287EFF9F00B39F75 /* CViewController.swift */; };
+		CCA502BB287EFF9F00B39F75 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA502BA287EFF9F00B39F75 /* CounterViewController.swift */; };
 		CCA502BE287EFF9F00B39F75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA502BC287EFF9F00B39F75 /* Main.storyboard */; };
 		CCA502C0287EFF9F00B39F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA502BF287EFF9F00B39F75 /* Assets.xcassets */; };
 		CCA502C3287EFF9F00B39F75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA502C1287EFF9F00B39F75 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		CCA502B3287EFF9F00B39F75 /* CounterUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CounterUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA502B6287EFF9F00B39F75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCA502B8287EFF9F00B39F75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CCA502BA287EFF9F00B39F75 /* CViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CViewController.swift; sourceTree = "<group>"; };
+		CCA502BA287EFF9F00B39F75 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 		CCA502BD287EFF9F00B39F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCA502BF287EFF9F00B39F75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCA502C2287EFF9F00B39F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,31 @@
 		CCA502B5287EFF9F00B39F75 /* CounterUI */ = {
 			isa = PBXGroup;
 			children = (
+				CCE33BCF287F0277004ED9B8 /* ViewController */,
+				CCE33BCE287F0265004ED9B8 /* Resources */,
 				CCA502B6287EFF9F00B39F75 /* AppDelegate.swift */,
 				CCA502B8287EFF9F00B39F75 /* SceneDelegate.swift */,
-				CCA502BA287EFF9F00B39F75 /* CViewController.swift */,
-				CCA502BC287EFF9F00B39F75 /* Main.storyboard */,
-				CCA502BF287EFF9F00B39F75 /* Assets.xcassets */,
-				CCA502C1287EFF9F00B39F75 /* LaunchScreen.storyboard */,
 				CCA502C4287EFF9F00B39F75 /* Info.plist */,
 			);
 			path = CounterUI;
+			sourceTree = "<group>";
+		};
+		CCE33BCE287F0265004ED9B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCA502BC287EFF9F00B39F75 /* Main.storyboard */,
+				CCA502BF287EFF9F00B39F75 /* Assets.xcassets */,
+				CCA502C1287EFF9F00B39F75 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CCE33BCF287F0277004ED9B8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CCA502BA287EFF9F00B39F75 /* CounterViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCA502BB287EFF9F00B39F75 /* CViewController.swift in Sources */,
+				CCA502BB287EFF9F00B39F75 /* CounterViewController.swift in Sources */,
 				CCA502B7287EFF9F00B39F75 /* AppDelegate.swift in Sources */,
 				CCA502B9287EFF9F00B39F75 /* SceneDelegate.swift in Sources */,
 			);
