@@ -14,7 +14,6 @@ class CounterViewController: UIViewController {
     @IBOutlet weak var counterButton: UIButton!
     @IBOutlet weak var counterLabel: UILabel!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

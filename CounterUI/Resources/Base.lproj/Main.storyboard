@@ -17,41 +17,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DiS-tp-CWL">
-                                <rect key="frame" x="269" y="198" width="105" height="34"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <rect key="frame" x="16" y="291" width="358" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="CXJ-nx-Hqm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Значение счётчика:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3q2-3f-3kP">
+                                <rect key="frame" x="16" y="219" width="358" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="lKr-jP-8Re"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Plx-JO-yr1">
-                                <rect key="frame" x="123" y="407" width="144" height="30"/>
+                                <rect key="frame" x="16" y="558" width="358" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="WKL-Eb-Q0b"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Дави смелее!"/>
                                 <connections>
                                     <action selector="counterButtonPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kSn-9u-eWh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Значение счётчика:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3q2-3f-3kP">
-                                <rect key="frame" x="16" y="198" width="251" height="34"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="DiS-tp-CWL" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="0Bp-d0-OWx"/>
-                            <constraint firstItem="3q2-3f-3kP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Dat-7f-afa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DiS-tp-CWL" secondAttribute="bottom" constant="578" id="Dno-f0-mPL"/>
-                            <constraint firstItem="Plx-JO-yr1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="QAg-aE-A0M"/>
-                            <constraint firstItem="DiS-tp-CWL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="269" id="SVo-wu-whJ"/>
-                            <constraint firstItem="Plx-JO-yr1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VKp-eZ-uhv"/>
-                            <constraint firstItem="3q2-3f-3kP" firstAttribute="baseline" secondItem="DiS-tp-CWL" secondAttribute="baseline" id="caG-El-CuO"/>
-                            <constraint firstItem="Plx-JO-yr1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iCp-MC-mv2"/>
-                            <constraint firstItem="Plx-JO-yr1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="363" id="kjh-Gh-GCZ"/>
-                            <constraint firstItem="DiS-tp-CWL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="154" id="wD8-hM-kuK"/>
-                            <constraint firstItem="3q2-3f-3kP" firstAttribute="firstBaseline" secondItem="DiS-tp-CWL" secondAttribute="firstBaseline" id="wU5-8e-hF5"/>
-                            <constraint firstItem="3q2-3f-3kP" firstAttribute="trailing" secondItem="Plx-JO-yr1" secondAttribute="trailing" id="z2Z-ku-rGp"/>
+                            <constraint firstItem="DiS-tp-CWL" firstAttribute="trailing" secondItem="3q2-3f-3kP" secondAttribute="trailing" id="1I1-kw-Ode"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Plx-JO-yr1" secondAttribute="bottom" constant="205" id="DJW-bg-hIa"/>
+                            <constraint firstItem="DiS-tp-CWL" firstAttribute="top" secondItem="3q2-3f-3kP" secondAttribute="bottom" constant="38" id="Es3-Zj-WQi"/>
+                            <constraint firstItem="3q2-3f-3kP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="175" id="HU2-JC-ZQJ"/>
+                            <constraint firstItem="3q2-3f-3kP" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="KRF-hP-n6s"/>
+                            <constraint firstItem="DiS-tp-CWL" firstAttribute="leading" secondItem="3q2-3f-3kP" secondAttribute="leading" id="Pes-Nv-nsN"/>
+                            <constraint firstItem="3q2-3f-3kP" firstAttribute="trailing" secondItem="Plx-JO-yr1" secondAttribute="trailing" id="XsJ-CB-To7"/>
+                            <constraint firstItem="3q2-3f-3kP" firstAttribute="leading" secondItem="Plx-JO-yr1" secondAttribute="leading" id="YjB-kP-0QN"/>
+                            <constraint firstItem="3q2-3f-3kP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yK0-hq-73c"/>
                         </constraints>
                     </view>
                     <connections>
