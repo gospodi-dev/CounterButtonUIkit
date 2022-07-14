@@ -21,11 +21,13 @@ class CounterViewController: UIViewController {
         
     }
     func updateLabels() {
+        count += 1
         counterLabel.text = String(count)
     }
     
     @IBAction func counterButtonPush(_ sender: Any) {
         updateLabels()
+        // print("меня нажали")
      }
 }
 

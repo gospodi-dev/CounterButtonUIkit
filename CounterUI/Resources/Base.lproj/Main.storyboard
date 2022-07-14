@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,27 +13,26 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CounterViewController" customModule="CounterUI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ok6-jO-4mn">
-                                <rect key="frame" x="111" y="426" width="192" height="47"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" buttonSize="large"/>
-                                <connections>
-                                    <action selector="counterButtonPush:" destination="BYZ-38-t0r" eventType="touchDown" id="8MW-kS-tDq"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSQ-bl-WSe">
-                                <rect key="frame" x="244" y="291" width="59" height="38"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DiS-tp-CWL">
+                                <rect key="frame" x="269" y="198" width="105" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Значение счётчика:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sb-kG-ft4">
-                                <rect key="frame" x="58" y="285" width="158" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Plx-JO-yr1">
+                                <rect key="frame" x="123" y="407" width="144" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="counterButtonPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kSn-9u-eWh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Значение счётчика:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3q2-3f-3kP">
+                                <rect key="frame" x="16" y="198" width="251" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -41,23 +40,28 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ok6-jO-4mn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9dI-57-kXg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ok6-jO-4mn" secondAttribute="bottom" constant="389" id="CWc-VW-fgu"/>
-                            <constraint firstItem="Ok6-jO-4mn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="Hg5-Gt-gue"/>
-                            <constraint firstItem="Ok6-jO-4mn" firstAttribute="centerX" secondItem="TSQ-bl-WSe" secondAttribute="centerX" id="WYX-6A-EDn"/>
-                            <constraint firstItem="TSQ-bl-WSe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fgK-2W-Ip3"/>
-                            <constraint firstItem="TSQ-bl-WSe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="385" id="naF-Hr-Sjk"/>
-                            <constraint firstItem="Ok6-jO-4mn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="382" id="oef-8V-H0v"/>
+                            <constraint firstItem="DiS-tp-CWL" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="0Bp-d0-OWx"/>
+                            <constraint firstItem="3q2-3f-3kP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Dat-7f-afa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DiS-tp-CWL" secondAttribute="bottom" constant="578" id="Dno-f0-mPL"/>
+                            <constraint firstItem="Plx-JO-yr1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="QAg-aE-A0M"/>
+                            <constraint firstItem="DiS-tp-CWL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="269" id="SVo-wu-whJ"/>
+                            <constraint firstItem="Plx-JO-yr1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VKp-eZ-uhv"/>
+                            <constraint firstItem="3q2-3f-3kP" firstAttribute="baseline" secondItem="DiS-tp-CWL" secondAttribute="baseline" id="caG-El-CuO"/>
+                            <constraint firstItem="Plx-JO-yr1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iCp-MC-mv2"/>
+                            <constraint firstItem="Plx-JO-yr1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="363" id="kjh-Gh-GCZ"/>
+                            <constraint firstItem="DiS-tp-CWL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="154" id="wD8-hM-kuK"/>
+                            <constraint firstItem="3q2-3f-3kP" firstAttribute="firstBaseline" secondItem="DiS-tp-CWL" secondAttribute="firstBaseline" id="wU5-8e-hF5"/>
+                            <constraint firstItem="3q2-3f-3kP" firstAttribute="trailing" secondItem="Plx-JO-yr1" secondAttribute="trailing" id="z2Z-ku-rGp"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="counterButton" destination="Ok6-jO-4mn" id="686-UN-of1"/>
-                        <outlet property="counterLabel" destination="TSQ-bl-WSe" id="vM9-38-Kx7"/>
+                        <outlet property="counterButton" destination="Plx-JO-yr1" id="NrI-Yc-F77"/>
+                        <outlet property="counterLabel" destination="DiS-tp-CWL" id="ZOT-ka-dmf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
+            <point key="canvasLocation" x="27.69230769230769" y="68.246445497630333"/>
         </scene>
     </scenes>
     <resources>
