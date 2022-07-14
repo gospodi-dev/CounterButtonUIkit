@@ -18,14 +18,15 @@ class CounterViewController: UIViewController {
         // Do any additional setup after loading the view.
         
     }
+    
     func updateLabels() {
         count += 1
-        counterLabel.text = String(count)
+        counterLabel.text = String("Значение счётчика: \(count)")
     }
     
+    //MARK: - Action
     @IBAction func counterButtonPush(_ sender: Any) {
         updateLabels()
-        // print("меня нажали")
      }
 }
 
