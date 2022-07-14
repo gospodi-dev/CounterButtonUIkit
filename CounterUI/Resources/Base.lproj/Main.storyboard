@@ -42,7 +42,7 @@
                                     <constraint firstAttribute="height" constant="47" id="WKL-Eb-Q0b"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Дави смелее!"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Дави смелей!"/>
                                 <connections>
                                     <action selector="counterButtonPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kSn-9u-eWh"/>
                                 </connections>
