@@ -8,18 +8,17 @@
 import UIKit
 
 class CounterViewController: UIViewController {
-    var count = 0
+    private var count = 0
     
-    @IBOutlet weak var counterButton: UIButton!
     @IBOutlet weak var counterLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    func updateLabels() {
+    private func updateLabels() {
         count += 1
-        counterLabel.text = String("Значение счётчика: \(count)")
+        counterLabel.text = "Значение счётчика: \(count)"
     }
     
     //MARK: - Action

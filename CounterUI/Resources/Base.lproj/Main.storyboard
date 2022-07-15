@@ -50,7 +50,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="counterButton" destination="Plx-JO-yr1" id="NrI-Yc-F77"/>
                         <outlet property="counterLabel" destination="DiS-tp-CWL" id="ZOT-ka-dmf"/>
                     </connections>
                 </viewController>
